@@ -27,6 +27,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 } else {
     // Redirect to the form if accessed directly
-    header("Location: test1.html");
+    header("Location: index.html");
     exit;
 }
