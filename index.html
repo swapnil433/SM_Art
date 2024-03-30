@@ -1,26 +1,24 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>Your Name - Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
   </head>
   <body>
-    <header>
-      <img src="https://i.imgur.com/KvEuBiI.png" />
-      <h1>Swapnil Kailas Kumbharkar</h1>
-      <p>Web Developer | Designer | Tech Enthusiast</p>
-    </header>
-    <section id="bio">
-      <h2>About Me</h2>
-      <p>[Your biography]</p>
-    </section>
-    <section id="work">
-      <h2>My Work</h2>
-      <div class="project" id="project1">Project 1</div>
-      <div class="project" id="project2">Project 2</div>
-      <div class="project" id="project3">Project 3</div>
-    </section>
-    <footer>
-      <p>Contact me at [7218429146]moon nights</p>
-    </footer>
+    <h2>Contact Us</h2>
+    <form id="contactForm" action="submit_form.php" method="post">
+      <label for="name">Name:</label><br />
+      <input type="text" id="name" name="name" required /><br /><br />
+
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" required /><br /><br />
+
+      <label for="message">Message:</label><br />
+      <textarea id="message" name="message" rows="4" required></textarea
+      ><br /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
   </body>
 </html>
